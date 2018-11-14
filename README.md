@@ -53,6 +53,8 @@ Original implementation: https://github.com/MarekKowalski/DeepAlignmentNetwork
 
 Another tensorflow implementation: https://github.com/zjjMaiMai/Deep-Alignment-Network-A-convolutional-neural-network-for-robust-face-alignment
 
+## Pretained Model
+[Here](https://github.com/LeeRel1991/DAN/releases) is a pretrained model on helen, afw, lfpw obtained by conducting the steps above.
 ## Remarks
 
 Note that I have no GPU in this period, so I'm not sure whether this implementation can achieve the same performance as the paper described. However, the functionality of the self defined layers has been tested and I found no problem. If you're interested, you can try my code and train a model. Feel free to raise an issue if you have any question.
