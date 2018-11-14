@@ -28,6 +28,11 @@ Dataset formatted like 300-W and Menpo
 
 Remember to set the `STAGE` variable and modify the `data path` in trainDAN.py
 
+### Demo for image
+`python demo_image.py`
+
+Remenber to change `img_dir` variable in `demo_image.py` to your local path containing .jpg face images.
+
 ### MobileNet training or testing
 
 `mkdir Model_mobilenet`
