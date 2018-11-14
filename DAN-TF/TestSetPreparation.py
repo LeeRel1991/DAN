@@ -21,6 +21,7 @@ commonSet.PrepareData(commonSetImageDirs, commonSetBoundingBoxFiles, meanShape, 
 commonSet.LoadImages()
 commonSet.CropResizeRotateAll()
 commonSet.imgs = commonSet.imgs.astype(np.float32)
+commonSet.NormalizeImages()
 commonSet.Save(datasetDir, "commonSet.npz")
 
 challengingSet = ImageServer(initialization='box')
@@ -28,6 +29,7 @@ challengingSet.PrepareData(challengingSetImageDirs, challengingSetBoundingBoxFil
 challengingSet.LoadImages()
 challengingSet.CropResizeRotateAll()
 challengingSet.imgs = challengingSet.imgs.astype(np.float32)
+challengingSet.NormalizeImages()
 challengingSet.Save(datasetDir, "challengingSet.npz")
 
 w300Set = ImageServer(initialization='box')
@@ -35,4 +37,5 @@ w300Set.PrepareData(w300SetImageDirs, w300SetBoundingBoxFiles, meanShape, 0, 100
 w300Set.LoadImages()
 w300Set.CropResizeRotateAll()
 w300Set.imgs = w300Set.imgs.astype(np.float32)
+w300Set.NormalizeImages()
 w300Set.Save(datasetDir, "w300Set.npz")
